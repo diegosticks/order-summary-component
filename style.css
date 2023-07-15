@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+}
+
+.container {
+    width: 350px;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(225, 100%, 98%);
+    box-shadow: 0.625rem 0.625rem 0.3125rem lightgray;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+container-img {
+    width: 100%;
+    border-radius: 0.625rem;
+}
+
+.container-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 0.9375rem 2.5rem ;
+}
+
+.container-sum-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.9375rem 0.625rem;
+    background-color: hsla(225, 100%, 94%, 0.3);
+    border-radius: 0.3125rem;
+}
+
+.container-sump-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%);
+    padding: 0.9375rem;
+    width: 100%;
+    border-radius: 0.625rem;
+    font-weight: 700;
+    color: hsl(225, 100%, 94%);
+    box-shadow: 0rem 0.3125rem 0.625rem hsl(224, 48%, 73%);
+}
+
+.btn:hover {
+    background-color: hsl(223, 47%, 23%);
+}
+
+a {
+    font-size: 0.8125rem;
+}
+
+.order {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin: 0.625rem 0;
+}
+
+h2 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+b {
+    color: hsl(223, 47%, 23%);
+}
+
+.container-sum-price p {
+    font-size: 0.9375rem;
+}
+
+p {
+    font-size: 0.8125rem;
+}
+
+@media screen and (max-width: 414px){
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        font-size: 12px;
+    }
+}
